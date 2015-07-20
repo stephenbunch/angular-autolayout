@@ -1180,7 +1180,7 @@ var l=this.rows.get(this._objective);l.setVariable(i,b.strength.symbolicWeight.v
       this.constraints = [];
       // Position container element to be the offset parent
       var position = this.containerElement.css('position');
-      if (position != 'absolute' || position != 'relative' || position != 'fixed') {
+      if (position != 'absolute' && position && 'relative' && position != 'fixed') {
         this.containerElement.css('position', 'relative');
       }
     }
