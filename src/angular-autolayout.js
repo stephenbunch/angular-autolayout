@@ -250,7 +250,7 @@
 			this.constraints = [];
 			// Position container element to be the offset parent
 			var position = this.containerElement.css('position');
-			if (position != 'absolute' || position != 'relative' || position != 'fixed') {
+			if (position != 'absolute' && position && 'relative' && position != 'fixed') {
 				this.containerElement.css('position', 'relative');
 			}
 		}
